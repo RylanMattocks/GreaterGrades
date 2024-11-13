@@ -1,0 +1,14 @@
+.add-class-button {
+    background-color: #4C76A8;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.add-class-button:hover {
+    background-color: #3B5A8E;
+}

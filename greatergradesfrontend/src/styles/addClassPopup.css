@@ -1,0 +1,131 @@
+/* Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Popup container */
+.popup {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    text-align: center;
+    animation: slideDown 0.3s ease;
+}
+
+/* Popup header */
+.popup h2 {
+    margin: 0 0 15px;
+    color: #333333;
+    font-size: 1.6em;
+    font-weight: bold;
+    border-bottom: 2px solid #E8E8E8;
+    padding-bottom: 10px;
+}
+
+/* Input labels */
+.popup label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #4C4C4C;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* Input field */
+.popup input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333333;
+    background-color: #FAFAFA;
+    transition: border 0.2s ease;
+}
+
+.popup input:focus {
+    border-color: #4C76A8;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+/* Buttons container */
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Submit and Cancel buttons */
+.popup button {
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* Submit button style */
+.popup button[type="submit"] {
+    background-color: #4C76A8;
+    color: #FFFFFF;
+}
+
+.popup button[type="submit"]:hover {
+    background-color: #3B5A8E;
+}
+
+/* Cancel button style */
+.popup button[type="button"] {
+    background-color: #CCCCCC;
+    color: #333333;
+}
+
+.popup button[type="button"]:hover {
+    background-color: #B2B2B2;
+}
+
+/* Error message */
+.error {
+    color: #D9534F;
+    font-size: 0.85em;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
